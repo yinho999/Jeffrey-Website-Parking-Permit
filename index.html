@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Permit</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <form action="">
+        <h2>Scoring categories</h2>
+        
+        <!-- Ranking -->
+        <label for="rank">1.	Rank : </label>
+        <select id="rank" name="rank">
+            <option value="I">I</option>
+            <option value="SS">SS</option>
+            <option value="S">S</option>
+            <option value="C">C</option>
+          </select><br>
+
+        <!-- Residence -->
+        <label for="residence">2.	Region of Residence : </label>
+        <select id="residence" name="residence">
+            <option value="HKI">Hong Kong Island</option>
+            <option value="KW">Kowloon West</option>
+            <option value="KE">Kowloon East</option>
+            <option value="NTS">New Territories South </option>
+            <option value="NTN_LT">New Territories North / Lantau Island </option>
+          </select><br>
+          
+        <!-- Travel time  -->
+        <label for="travelTime">3.	Projected travel time (in mins): </label>
+        <input type="number" id="travelTime" name="travelTime" ><br>
+
+
+        <!-- Carpool -->
+        <label for="carpool">4.	Carpool : </label>
+        
+        <input type="radio" id="carpool1" name="carpool" value="yes">
+        <label for="carpool">Yes</label>
+        <input type="radio" id="carpool2" name="carpool" value="no">
+        <label for="carpool">No</label><br>
+
+        <!-- Shift Duty -->
+        <label for="shift">5.	Shift duty : </label>
+        <input type="radio" id="shift1" name="shift" value="yes">
+        <label for="shift">Yes</label>
+        <input type="radio" id="shift2" name="shift" value="no">
+        <label for="shift">No</label><br>
+        <br>
+        
+
+        <!-- Personal Information -->
+
+        <h2>Personal categories</h2>
+        <label for="SN">S/N: </label>
+        <input type="text" id="SN"><br>
+        <label for="UI">UI: </label>
+        <input type="text" id="UI"><br>
+        <label for="staffName">Name: </label>
+        <input type="text" id="staffName"><br>
+        <label for="Post">Posting: </label>
+        <input type="text" id="Post"><br>
+<br><br><br><br><br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    
+</body>
+</html>
